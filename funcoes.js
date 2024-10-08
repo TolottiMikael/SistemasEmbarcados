@@ -1,3 +1,13 @@
+const fs = require('fs');
+
+
+function salvaEmArquivos(){
+    fs.appendFile('Valores.txt', 'test', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
+}
+
 function func_fechar() {
     window.close();
 }
